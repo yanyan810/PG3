@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <windows.h>
 
 int main() {
-	SetConsoleOutputCP(65001);
-	//表示おおお
+  
+	//SetConsoleOutputCP(65001);
 
-	char str[] = "あ";
+    char str[] = "あいう感じカタカナえお";
 
-	printf("%s\n",str);
-	return 0;
+    printf("%s", str);
+
+    return 0;
 }
