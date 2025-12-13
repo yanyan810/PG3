@@ -37,15 +37,15 @@ int main() {
 	}
 
 	printf("%s (%d stations)\n", "1970", (int)y1970.size());
-	for (auto s : y1970) printf("%s |", s);
+	for (auto s : y1970) printf("%s ", s);
 	printf("\n\n");
 
 	printf("%s (%d stations)\n", "2019", (int)y2019.size());
-	for (auto s : y2019) printf("%s |", s);
+	for (auto s : y2019) printf("%s ", s);
 	printf("\n\n");
 
 	printf("%s (%d stations)\n", "1970", (int)y2022.size());
-	for (auto s : y2022) printf("%s |", s);
+	for (auto s : y2022) printf("%s ", s);
 	printf("\n\n");
 
 	////float型の可変長配列 c (要素数:3)
