@@ -30,7 +30,7 @@ int main() {
 	auto y2022 = y2019;
 
 	for (auto it = y2022.begin(); it != y2022.end(); ++it) {
-		if (strcmp(*it, "Tamachi") == 0) {
+		if (strcmp(*it, "Shinagawa") == 0) {
 			y2022.insert(next(it), "Takanawa Gateway");    // 直後に挿入
 
 		}
