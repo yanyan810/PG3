@@ -1,24 +1,31 @@
 #pragma once
-#include "InputHandle.h"
-#include "Command.h"
-#include "Player.h"
+#include <memory>
+#include <vector>
+#include "StageSceneInputHandler.h"
+#include "Selector.h"
+#include "Unit.h"
+#include "ISceneCommand.h"
 
-
-class StageScene
-{
+class StageScene {
 public:
-	//StageScene();
-
-
-	void Init();
-	void Update();
-	void Draw();
+    void Init();
+    void Update();
+    void Draw();
 
 private:
+    void DrawGrid() const;
 
-	InputHandle* inputHandle_ = nullptr;
-	Command* command_ = nullptr;
-	Player* player_;
+    std::unique_ptr<StageSceneInputHandler> input_;
+    std::unique_ptr<Selector> selector_;
+    std::vector<std::unique_ptr<Unit>> units_;
 
+    Unit* selectedUnit_ = nullptr;
+
+
+    std::vector<std::unique_ptr<IStageSceneCommand>> undoStack_;
+    int maxUndo_ = 999999; 
+    Unit* FindUnitAtSelector() const;
+    void SetSelected(Unit* u);
+
+    int tile_ = 32;
 };
-

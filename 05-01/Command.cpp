@@ -1,15 +1,8 @@
 #include "Command.h"
-#include "Player.h"
+#include "Selector.h"
+#include "Unit.h"
 
-void MoveRightCommand::Exec(Player& player) {
+void SelectorMoveCommand::Exec() { s_->Move(dx_, dy_); }
 
-	player.MoveRight();
-
-}
-
-
-void MoveLeftCommand::Exec(Player& player) {
-
-	player.MoveLeft();
-
-}
+void UnitMoveCommand::Exec() { u_->Move(dx_, dy_); }
+void UnitMoveCommand::Undo() { u_->Move(-dx_, -dy_); }

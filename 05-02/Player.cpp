@@ -9,7 +9,7 @@ void Player::Update() {
 }
 
 void Player::Draw() {
-    Novice::DrawBox(pos.x, pos.y, 12, 12, 0.0f, WHITE, kFillModeSolid);
+    Novice::DrawBox(pos.x, pos.y, 32, 32, 0.0f, WHITE, kFillModeSolid);
 }
 
 void Player::MoveLeft() {

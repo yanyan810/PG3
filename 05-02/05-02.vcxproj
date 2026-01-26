@@ -17,10 +17,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0bc4a122-f06a-4486-ba08-4c9acca4aab0}</ProjectGuid>
+    <ProjectGuid>{A3C9F1B4-8D7C-4A2E-9C1F-123456789ABC}</ProjectGuid>
     <RootNamespace>Novice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>05-02</ProjectName>
+    <ProjectName>05-01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -175,7 +175,6 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="StageScene.cpp" />
-    <ClCompile Include="StageSceneInputHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DirectXGame\3d\Camera.h" />
@@ -207,13 +206,8 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="InputHandle.h" />
-    <ClInclude Include="ISceneCommand.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Selector.h" />
-    <ClInclude Include="SelectorCommand.h" />
     <ClInclude Include="StageScene.h" />
-    <ClInclude Include="StageSceneInputHandler.h" />
-    <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
